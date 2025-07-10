@@ -1,0 +1,71 @@
+/* ======== Estilo Base ======== */
+body {
+    background-color: #101010;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.credits {
+    text-align: center;
+    margin-top: 40px;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+
+/* ======== Cards e Gráficos ======== */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #333333;
+}
+
+.card-body {
+    padding: 0 !important; /* Reduz espaço interno para gráficos maiores */
+}
+
+#map-graph, #hist-graph {
+    border-radius: 12px;
+    width: 100%;
+    height: 500px;
+}
+
+/* Tamanhos específicos por gráfico (opcional) */
+
+#map-graph {
+    height: 500px;
+}
+#hist-graph {
+    height: 400px;
+}
+
+/* ======== Dropdowns ======== */
+.dash-dropdown {
+    background-color: #202020;
+    color: #000000;
+}
+
+
+/* ======== Responsividade ======== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .dash-dropdown {
+        font-size: 0.9rem;
+    }
+
+    #map-graph,
+    #hist-graph {
+        height: 350px;
+    }
+}
